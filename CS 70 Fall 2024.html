@@ -1,0 +1,5390 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://www.eecs70.org/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./CS 70 Fall 2024_files/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CS 70 Fall 2024_files/open-sans.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CS 70 Fall 2024_files/main.css" crossorigin="anonymous">
+  <link href="./CS 70 Fall 2024_files/open-iconic-bootstrap.min.css" rel="stylesheet">
+  <link href="./CS 70 Fall 2024_files/bootstrap-toc.min.css" rel="stylesheet">
+  <link href="./CS 70 Fall 2024_files/fullcalendar.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="http://www.eecs70.org/favicon.ico">
+
+  <meta name="google-site-verification" content="3tt6Hh5OrhULlYDR5_LmfXBQsKnGUqyFViWNU1V1NOg">
+
+  <!-- Google tag for site analytics (gtag.js) -->
+  <script async="" src="./CS 70 Fall 2024_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QVXDGBTBKS');
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./CS 70 Fall 2024_files/jquery.min.js.下载" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+  <script src="./CS 70 Fall 2024_files/bootstrap.bundle.min.js.下载" crossorigin="anonymous"></script>
+  <script src="./CS 70 Fall 2024_files/bootstrap-toc.min.js.下载"></script>
+  <script src="./CS 70 Fall 2024_files/moment.min.js.下载"></script>
+  <script src="./CS 70 Fall 2024_files/fullcalendar.min.js.下载"></script>
+
+  
+
+  <title> CS 70 Fall 2024 </title>
+</head>
+
+<body>
+
+  <div class="wrapper bg-white">
+    <nav class="navbar navbar-expand-md align-items-center">
+      <div class="container">
+        <a class="navbar-brand brand-berkeley" href="http://www.eecs70.org/">
+          <img src="./CS 70 Fall 2024_files/penguin_and_pigeon.png" style="height: 52px;" alt="CS70 Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            
+
+            
+            <li class="nav-item  active ">
+              <a class="nav-link " href="http://www.eecs70.org/">
+                Home
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="http://www.eecs70.org/discussions/">
+                Discussions
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="http://www.eecs70.org/calendar/">
+                Calendar
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="http://www.eecs70.org/policies/">
+                Policies
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="http://www.eecs70.org/resources/">
+                Resources
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="http://www.eecs70.org/staff/">
+                Staff
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link  text-muted " href="https://forms.gle/uaE1VuCiDQU5AYHn6">
+                Attendance
+                
+                <span class="oi oi-external-link"></span>
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link  text-muted " href="https://edstem.org/us/join/fDYzrG">
+                Ed
+                
+                <span class="oi oi-external-link"></span>
+                
+              </a>
+            </li>
+            
+
+            
+
+            
+            <li class="nav-item ">
+              <a class="nav-link  text-muted " href="https://oh.eecs70.org/">
+                Queue
+                
+                <span class="oi oi-external-link"></span>
+                
+              </a>
+            </li>
+            
+
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      
+
+<h1 class="fs-2">Discrete Mathematics and Probability Theory</h1>
+<h2 class="fs-4 text-muted">CS70 at UC Berkeley, Fall 2024</h2>
+<h2 class="fs-5">Satish Rao, Josh Hug</h2>
+<p>Lecture: TuTh 5:00pm - 6:30pm, Pimentel 1<br>
+
+<a id="jump-cur-week" href="http://www.eecs70.org/#week6"><b>Jump to current week</b></a>
+
+
+
+  </p><div>
+    <i>Note: This content schedule for Fall 2024 is subject to change.</i>
+  </div>
+
+
+<div class="table-responsive py-3">
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Week</th>
+            <th>Date</th>
+            <th>Lecture</th>
+            <th>Resources</th>
+            <th>Notes</th>
+            <th>Discussion</th>
+            <th>Homework</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week0">
+                                    0<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="bg-light">
+                                    Tue<br>
+                                    8/27
+                                </td>
+                                <td class="table-td-sm bg-light">
+                                    
+                                    
+                                        <span class="fst-italic"><p>No lecture</p>
+</span>
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis00b.pdf">Disc 0B</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis00b-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/hw00.pdf">HW 0</a>,<br>
+                                    <a href="http://www.eecs70.org/assets/pdf/hw00-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    8/29
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Introduction, Propositional Logic</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-1-8-slash-29" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-1.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-1-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-1-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n0.pdf">Note 0</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n1.pdf">Note 1</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week1">
+                                    1<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    9/3
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Proofs</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-2-9-slash-3" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-2.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-2-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-2-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n2.pdf">Note 2</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis01a.pdf">Disc 1A</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis01a-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis01b.pdf">Disc 1B</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis01b-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/hw01.pdf">HW 1</a>,<br>
+                                    <a href="http://www.eecs70.org/assets/pdf/hw01-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    9/5
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Induction</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-3-9-slash-5" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-3.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-3-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-3-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n3.pdf">Note 3</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week2">
+                                    2<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    9/10
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Stable Matching</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-4-9-slash-10" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-4.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-4-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-4-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n4.pdf">Note 4</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis02a.pdf">Disc 2A</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis02a-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis02b.pdf">Disc 2B</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis02b-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/hw02.pdf">HW 2</a>,<br>
+                                    <a href="http://www.eecs70.org/assets/pdf/hw02-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    9/12
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Graphs</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-5-9-slash-12" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-5.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-5-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-5-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n5.pdf">Note 5</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week3">
+                                    3<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    9/17
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Graphs</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-6-9-slash-17" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-6.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-6-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-6-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n5.pdf">Note 5</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis03a.pdf">Disc 3A</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis03a-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis03b.pdf">Disc 3B</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis03b-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/hw03.pdf">HW 3</a>,<br>
+                                    <a href="http://www.eecs70.org/assets/pdf/hw03-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    9/19
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Modular Arithmetic</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-7-9-slash-19" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-7.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-7-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-7-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n6.pdf">Note 6</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week4">
+                                    4<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    9/24
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Euclid, FLT, CRT</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-8-9-slash-24" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-8.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-8-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-8-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n6.pdf">Note 6</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n7.pdf">Note 7</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis04a.pdf">Disc 4A</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis04a-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis04b.pdf">Disc 4B</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis04b-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/hw04.pdf">HW 4</a>,<br>
+                                    <a href="http://www.eecs70.org/assets/pdf/hw04-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    9/26
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>RSA</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-9-9-slash-26" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-9.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-9-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-9-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n7.pdf">Note 7</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week5">
+                                    5<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    10/1
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Polynomials, Secret Sharing</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-10-10-slash-1" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-10.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-10-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-10-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n8.pdf">Note 8</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis05a.pdf">Disc 5A</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis05a-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis05b.pdf">Disc 5B</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis05b-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/hw05.pdf">HW 5</a>,<br>
+                                    <a href="http://www.eecs70.org/assets/pdf/hw05-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    10/3
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Error Correcting Codes</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-11-10-slash-3" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-11.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-11-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-11-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n9.pdf">Note 9</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week6">
+                                    6<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    10/8
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Counting</p>
+
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="https://bcourses.berkeley.edu/courses/1538142/pages/lecture-12-10-slash-8" target="_blank">lecture</a>
+                                                
+                                                
+                                            </span>
+                                            <div style="height:0.5rem"></div>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-12.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-12-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-12-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n10.pdf">Note 10</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis06a.pdf">Disc 6A</a>, <br>
+                                    <a href="http://www.eecs70.org/assets/pdf/dis06a-sol.pdf">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/dis06b.pdf">Disc 6B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a href="http://www.eecs70.org/assets/pdf/hw06.pdf">HW 6</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    10/10
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Counting and Countability</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n10.pdf">Note 10</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n11.pdf">Note 11</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week7">
+                                    7<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    10/15
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p><strong>Midterm (7-9 pm)</strong></p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-13.pdf">full(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-13-handout.pdf">1pp(draft)</a>
+                                            </span>
+                                        
+                                            <span class="badge bg-light text-dark main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/lec-13-6up.pdf">6pp(draft)</a>
+                                            </span>
+                                        
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 7B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 7</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    10/17
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Countability and Computability</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n11.pdf">Note 11</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n12.pdf">Note 12</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week8">
+                                    8<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    10/22
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Introduction to Discrete Probability</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n13.pdf">Note 13</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 8A</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 8B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 8</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    10/24
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Conditional Probability, Independence</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n13.pdf">Note 13</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n14.pdf">Note 14</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week9">
+                                    9<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    10/29
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Combinations of Events, Applications</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n14.pdf">Note 14</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n18.pdf">Note 18</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 9A</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 9B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 9</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    10/31
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Random Variables</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n15.pdf">Note 15</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n19.pdf">Note 19</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week10">
+                                    10<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    11/5
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Expectation, Joint Distributions and Independence</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n15.pdf">Note 15</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n19.pdf">Note 19</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 10A</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 10B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 10</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    11/7
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Coupon Collector and Variance</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n16.pdf">Note 16</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n19.pdf">Note 19</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week11">
+                                    11<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    11/12
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Variance, Covariance, Total Expectation</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n16.pdf">Note 16</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n19.pdf">Note 19</a>
+
+
+                                            </span>
+                                            <!-- , -->
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n20.pdf">Note 20</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 11A</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 11B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 11</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    11/14
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Concentration Inequalities</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n17.pdf">Note 17</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week12">
+                                    12<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    11/19
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Continuous Probability</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n21.pdf">Note 21</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 12A</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 12B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 12</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    11/21
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Continuous Probability, Gaussian Distribution, CLT</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n21.pdf">Note 21</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week13">
+                                    13<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    11/26
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Regression and Least Squares</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n20.pdf">Note 20</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 13A</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 13</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="bg-light">
+                                    Thu<br>
+                                    11/28
+                                </td>
+                                <td class="table-td-sm bg-light">
+                                    
+                                    
+                                        <span class="fst-italic"><p>Thanksgiving</p>
+</span>
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week14">
+                                    14<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Tue<br>
+                                    12/3
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Markov Chains</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n22.pdf">Note 22</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 14A</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">Disc 14B</a>, <br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                <div class="badge bg-light text-dark my-1 p-3 main-badge">
+                                    <a class="text-muted">HW 14</a>,<br>
+                                    <a class="text-muted">solutions</a><br>
+                                </div>
+                                <br>
+                                
+                                
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    12/5
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p>Markov Chains</p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                        
+                                            <span class="badge bg-light text-dark my-1 main-badge">
+                                                <a href="http://www.eecs70.org/assets/pdf/notes/n22.pdf">Note 22</a>
+
+
+                                            </span>
+                                            <!--  -->
+                                        
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="2" style="text-align: center; width: 20px;" id="week15">
+                                    15<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="bg-light">
+                                    Tue<br>
+                                    12/10
+                                </td>
+                                <td class="table-td-sm bg-light">
+                                    
+                                    
+                                        <span class="fst-italic"><p>RRR Week</p>
+</span>
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <td style="width: 20px;" class="bg-light">
+                                    Thu<br>
+                                    12/12
+                                </td>
+                                <td class="table-td-sm bg-light">
+                                    
+                                    
+                                        <span class="fst-italic"><p>RRR Week</p>
+</span>
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                </td>
+                                <td class="bg-light">
+                                    
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+                    
+                
+            
+        
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <tr>
+                                
+                                <th rowspan="1" style="text-align: center; width: 20px;" id="week16">
+                                    16<br>
+                                    
+                                </th>
+                                
+                                <td style="width: 20px;" class="">
+                                    Thu<br>
+                                    12/19
+                                </td>
+                                <td class="table-td-sm ">
+                                    
+                                        <p><strong>Final Exam (11:30 am - 2:30 pm)</strong></p>
+
+                                        
+
+
+                                    
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                </td>
+                                <td class="">
+                                    
+                                    
+                                </td>
+                                
+                                <td rowspan="1" style="vertical-align: middle; text-align: center;">
+                                    
+                                </td>
+                                <td rowspan="1" style="vertical-align: middle; text-align: center;">
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        
+                    
+                
+            
+        
+    </tbody>
+</table>
+</div>
+
+
+
+<script lang="text/javascript" defer="">
+    const semesterStart = "2024-08-28";
+
+    let cur_week;
+    if (moment().isBefore(semesterStart)) {
+        cur_week = 0;
+    } else {
+        // get week number of first lecture (week 0); this is the offset
+        let start_week = parseInt(moment(semesterStart).format("w"));
+        cur_week = parseInt(moment().format("w")) - start_week;
+        if (cur_week < 0) {
+            // wrap around
+            cur_week += 52;
+        }
+    }
+
+    $("#jump-cur-week").attr("href", `#week${cur_week}`);
+</script>
+
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link text-secondary-emphasis" href="http://www.eecs70.org/">
+          CS 70 Fall 2024
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="http://www.eecs70.org/">
+          Home
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="http://www.eecs70.org/discussions/">
+          Discussions
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="http://www.eecs70.org/calendar/">
+          Calendar
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="http://www.eecs70.org/policies/">
+          Policies
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="http://www.eecs70.org/resources/">
+          Resources
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="http://www.eecs70.org/staff/">
+          Staff
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link  text-dark " href="https://forms.gle/uaE1VuCiDQU5AYHn6">
+          Attendance
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link  text-dark " href="https://edstem.org/us/join/fDYzrG">
+          Ed
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link  text-dark " href="https://oh.eecs70.org/">
+          Queue
+        </a>
+      </li>
+      
+
+      <li class="nav-item">
+        <a class="nav-link text-secondary-emphasis" href="http://www.eecs70.org/#">
+          Back to top
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+
+
+<deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div dir="ltr" style="visibility: initial !important;"><div class="dl-input-translation-container svelte-95aucy"><div></div></div></div></template></deepl-input-controller></body></html>
