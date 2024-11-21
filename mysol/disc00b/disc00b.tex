@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\raggedright
+\begin{document}
+	\section{Proposition Practice} 
+		\begin{enumerate}
+			\item ($\exists$x$\in$R)(x$\notin$Q).True
+			\item ($\forall$x$\in$Z)(x$\in$N$\vee$x$<$0).True
+			\item ($\forall$x$\in$N)($(x|6)$ $\Rightarrow$ $(x|2)\vee(x|3)$).True
+			\item True.
+			\item False.
+			\item True.
+		\end{enumerate}
+	\section{Truth Table}
+		\begin{enumerate}
+			\item Not equivalent.
+			
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				P & Q & P$\wedge$(Q$\vee$P) & P$\wedge$Q \\ \hline
+				T & T & T & T \\ \hline
+				T & F & T & F \\ \hline
+				F & T & F & F \\ \hline
+				F & F & F & F \\ \hline
+			\end{tabular}
+			\item Equivalent.
+			
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				P & Q & R & (P$\vee$Q)$\wedge$R & (P$\wedge$R)$\vee$(Q$\wedge$R) \\ \hline
+				T & T & T & T & T \\ \hline
+				T & T & F & F & F \\ \hline
+				T & F & T & T & T \\ \hline
+				T & F & F & F & F \\ \hline
+				F & T & T & T & T \\ \hline
+				F & T & F & F & F \\ \hline
+				F & F & T & F & F \\ \hline
+				F & F & F & F & F \\ \hline 
+			\end{tabular}
+			\item Equivalent.
+			
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				P & Q & R & (P$\wedge$Q)$\vee$R & (P$\vee$R)$\wedge$(Q$\vee$R) \\ \hline
+				T & T & T & T & T \\ \hline
+				T & T & F & T & T \\ \hline
+				T & F & T & T & T \\ \hline
+				T & F & F & F & F \\ \hline
+				F & T & T & T & T \\ \hline
+				F & T & F & F & F \\ \hline
+				F & F & T & T & T \\ \hline
+				F & F & F & F & F \\ \hline 
+			\end{tabular}
+		\end{enumerate}
+	\newpage
+	\section{Truth Table}
+		\begin{enumerate}
+			\item 111
+		\end{enumerate}
+\end{document}
