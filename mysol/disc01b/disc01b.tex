@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\usepackage{xeCJK}
+\usepackage{amsmath}
+\setCJKmainfont{SimSun}
+\raggedright
+\begin{document}
+	\section{Natural Induction on Inequality}
+	Base case:when n = 0,then $(1 + x)^0 \geq 1 + 0x$,$1 \geq 1$
+	
+	Inductive Hypothesis:assume that $(1 + x)^k \geq 1 + kx$ for some $n = k$,where k $\in$ Z
+	
+	Inductive Step:for $n = k + 1$
+	\begin{align*}
+		(1+x)^{k+1} = (1+x)^k (1+x) &\geq (1+kx)(1+x) \\
+		&\geq 1 + kx + x + kx^2 \\
+		&\geq 1 + (k+1)x + kx^2 \\
+		&\geq 1 + (k+1)x
+	\end{align*}
+	\section{Make It Stronger}
+	\begin{description}
+		\item[(a)]
+		Base case:when n = 1,then $a_n \leq 3^{2^n} \leq 9$
+		
+		Inductive Hypothesis:assume that $a_n \leq 3^{2^n}$ for some $n \geq 1$,where n $\in$ Z
+		
+		Inductive Step:for $n + 1$
+		\begin{align*}
+			a_{n+1} = 3a_n^2 &\leq 3(3^{2^n})^2 \\
+			&\leq3(3^{2^{n+1}}) \\
+			&\leq3^{2^{n+1} + 1}
+		\end{align*}
+		\item[(b)]
+		Base case:when n = 1,then $a_n \leq 3^{2^n - 1} \leq 3$
+		
+		Inductive Hypothesis:assume that $a_n \leq 3^{2^n - 1}$ for some $n \geq 1$,where n $\in$ Z
+		
+		Inductive Step:for $n + 1$
+		\begin{align*}
+			a_{n+1} = 3a_n^2 &\leq 3(3^{2^n - 1})^2 \\
+			&\leq3(3^{2^{n+1} - 2}) \\
+			&\leq3^{2^{n+1} - 1} \\
+		\end{align*}
+		this is the induction hypothesis for n+1
+		\item[(c)]
+		for every n $\geq$ 1,we have $2^n - 1$ $\leq$ $2^n$,therefore $3^{2^n - 1}$ $\leq$ $3^{2^n}$
+	\end{description}
+	\section{Binary Numbers}
+	Base case:when n = 1,$n = c_0 2^0$,where $c_0 = 1$
+	
+	Inductive Hypothesis:assume that the proposition is right
+	
+	Inductive Step:for $n + 1$,if n is an even,so the $c_0$ of n is 0,and the $c_0$ of $n + 1$ is 1,and other part of $n + 1$ is the same as $n$.
+	
+	If n is an odd,so n + 1 is an even,according to the hypothesis:
+	
+	$(n+1)/2 = c_k 2^k + \cdots + c_1 2^1 + c_0 2^0$
+	
+	$n+1 = 2(n+1)/2 = c_k 2^{k+1} + \cdots + c_1 2^2 + c_0 2^1 + 0\cdot2^0$
+	
+	therefor the statement is true.
+	\section{Fibonacci for Home}
+	Base case:when n = 1,$F_{3n} = F_3 = 2$,is even.
+	
+	Inductive Hypothesis:for an arbitrary fixed value of k, $F_{3k}$ is even.
+	
+	Inductive Step:for $k+1$,$F_{3k+3} = F_{3k+1} + F_{3k+2} = 2F_{3k+1} + F_{3k}$.
+	
+	By the hypothesis,we know that $F_{3k} = 2q$ for some integer$q$.So $F_{3k+3} = 2(F_{3k+1} + q)$,which implies $F_{3k+3}$ is even.
+	
+	The statement is true.
+\end{document}
